@@ -1,0 +1,6 @@
+name: sonar
+home: http://www.sonarqube.org/
+version: 5.6.1
+description: SonarQube is an open platform to manage code quality.
+details:
+  This chart contains SonarQube pod and service for Kubernetes.

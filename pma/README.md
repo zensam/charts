@@ -1,1 +1,0 @@
-This Chart provides a PHP Administration service.

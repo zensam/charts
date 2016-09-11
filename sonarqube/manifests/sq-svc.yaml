@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: sonar
+  name: sonar
+spec:
+  type: NodePort
+  # type: LoadBalancer
+    # loadBalancerSourceRanges:
+    # - 172.30.17.16/28
+    # - 172.30.17.208/28
+  # type: NodePort
+  ports:
+    - name: sqport
+      port: 9000
+      targetPort: 9000
+      # nodePort: 9000
+      protocol: TCP
+    - name: pgport
+      port: 5432
+      targetPort: 5432
+      # nodePort: 5432
+      protocol: TCP
+  externalIPs:
+    - 172.30.17.13
+  selector:
+    name: sonar
+    role: code-check
