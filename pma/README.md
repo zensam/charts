@@ -1,1 +1,1 @@
-Contentoff phpmyadmin service
+This Chart provides a PHP Administration service.
