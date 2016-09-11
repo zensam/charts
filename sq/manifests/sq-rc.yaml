@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: sonar
   labels:
-    heritage: helm
+    name: sonar
 spec:
   replicas: 1
   selector:
