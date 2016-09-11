@@ -1,6 +1,8 @@
-name: sonar
+name: sq
 home: http://www.sonarqube.org/
 version: 5.6.1
 description: SonarQube is an open platform to manage code quality.
+maintainers:
+  - Zen Sam <zensam@ukr.net>
 details:
   SonarQube in Kubernetes.
