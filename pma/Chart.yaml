@@ -1,0 +1,8 @@
+name: phpmyadmin
+home: https://www.phpmyadmin.net/
+version: 4.5.5
+description: PHP Administration Service
+maintainers:
+  - Michal Cihar <michal@cihar.com>
+details:
+  This Chart provides a PHP Administration service.
