@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: sonar
-        image: sonar
+        image: zensam/sonar
         imagePullPolicy: Always
         ports:
         - name: sqport

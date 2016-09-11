@@ -1,1 +1,1 @@
-## SonarQube in Kubernetes
+SonarQube in Kubernetes
