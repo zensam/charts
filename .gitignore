@@ -1,2 +1,6 @@
 /.bin
 /_test/secrets/*.json
+tmp/
+*.tmp
+*.old
+*.bak
