@@ -10,7 +10,6 @@ spec:
     # loadBalancerSourceRanges:
     # - 172.30.17.16/28
     # - 172.30.17.208/28
-  # type: NodePort
   ports:
     - name: sqport
       port: 9000
@@ -22,8 +21,8 @@ spec:
       targetPort: 5432
       # nodePort: 5432
       protocol: TCP
-  externalIPs:
-    - 172.30.17.13
+#  externalIPs:
+#    - 172.30.17.13
   selector:
     name: sonar
     role: code-check

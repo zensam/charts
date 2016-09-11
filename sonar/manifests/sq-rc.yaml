@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: sonar
+  labels:
+    name: sonar
+spec:
+  replicas: 1
+  selector:
+    name: sonar
+    role: code-check
+  template:
+    metadata:
+      name: sonar
+      labels:
+        name: sonar
+        role: code-check
+    spec:
+      containers:
+      - name: sonar
+        image: zensam/sonar
+        imagePullPolicy: Always
+        ports:
+        - name: sqport
+          containerPort: 9000
+        - name: pgport
+          containerPort: 5432
